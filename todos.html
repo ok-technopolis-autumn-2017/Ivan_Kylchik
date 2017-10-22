@@ -5,72 +5,47 @@
 	<title>TODOS</title>
 </head>
 <body>
-	<div class="window"> 
-		<div class="header">
-			<h1 class="header_title">TODOS</h1> 
-		</div>
-		<div class="main-body">
-			<form class="main-form">
-				<div class="main-body_header"> 
-					<button class="select-all">
-						<img src="icons/select-all.png" alt="Select All">
-					</button>
-					<input type="text" placeholder="What need to be done?">
-				</div> 
-				<div class="main-body_elements"> 
-					<div class="element"> 
-						<input class="checkBox" type="checkbox">
-							<img src="icons/close.png" alt="Delete">
-						</input>
-						HTML
-						<button class="delete-button">
-							<img src="icons/close.png" alt="Delete">
-						</button>
-					</div>
-					<div class="element"> 
-						<input class="checkBox" type="checkbox" checked="checked">
-							<img src="icons/completed.png" alt="Delete">
-						</input>
-						CSS
-						<button class="delete-button">
-							<img src="icons/close.png" alt="Delete">
-						</button>
-					</div>
-					<div class="element"> 
-						<input class="checkBox" type="checkbox">
-							<img src="icons/close.png" alt="Delete">
-						</input>
-						JS
-						<button class="delete-button">
-							<img src="icons/close.png" alt="Delete">
-						</button>
-					</div>
-					<div class="element"> 
-						<input class="checkBox" type="checkbox">
-							<img src="icons/close.png" alt="Delete">
-						</input>
-						JS tools
-						<button class="delete-button">
-							<img src="icons/close.png" alt="Delete">
-						</button>
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="footer">
-			<div class="footer_left">
-				3 items left
+	<div class="header">
+		<h1 class="header_title">TODOS</h1> 
+	</div>
+	<div class="main-body">
+		<div class="main-body_header"> 
+			<button class="select-all" aria-label="Отметить все как выполненное">select All</button>
+			<input type="text" placeholder="What need to be done?" aria-label="Поле для ввода новой задачи">
+		</div> 
+		<div class="main-body_elements"> 
+			<div class="element"> 
+				<input class="checkBox" type="checkbox" aria-label="Пометить как выполненное"/>
+				<input value="HTML" aria-label="Задача: HTML"/>
+				<button class="delete-button" aria-label="Удалить данную задачу">Del</button>
 			</div>
-			<div class="footer_filters">
-				<a class="filter" href="#">All</a>
-            	<a class="filter" href="#">Active</a>
-            	<a class="filter" href="#">Completed</a>
+			<div class="element"> 
+				<input class="checkBox" type="checkbox" checked="checked" aria-label="Пометить как невыполненное"/>
+				<input value="CSS" aria-label="Задача: CSS"/>
+				<button class="delete-button" aria-label="Удалить данную задачу">Del</button>
 			</div>
-			<div class="footer_clear-completed">
-				Clear completed
+			<div class="element"> 
+				<input class="checkBox" type="checkbox" aria-label="Пометить как выполненное"/>
+				<input value="JS" aria-label="Задача: JS"/>
+				<button class="delete-button" aria-label="Удалить данную задачу">Del</button>
+			</div>
+			<div class="element"> 
+				<input class="checkBox" type="checkbox" aria-label="Пометить как выполненное"/>
+				<input value="JS tools" aria-label="Задача: JS tools"/>
+				<button class="delete-button" aria-label="Удалить данную задачу">Del</button>
 			</div>
 		</div>
 	</div>
-
+	<div class="footer">
+		<div class="footer_left" aria-label="Количество не выполненных задач: 3">
+			3 items left
+		</div>
+		<div class="footer_filters">
+			<a class="filter" href="#" aria-label="Фильтр: показать все элементы">All</a>
+        	<a class="filter" href="#" aria-label="Фильтр: показать невыполненное">Active</a>
+        	<a class="filter" href="#" aria-label="Фильтр: показать выполненное">Completed</a>
+		</div>
+		<button class="delete-completed" aria-label="Удалить все выполненные задачи">Clear completed</button>
+	</div>
 </body>
 </html>
