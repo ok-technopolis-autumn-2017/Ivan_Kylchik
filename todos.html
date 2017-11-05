@@ -5,47 +5,47 @@
 	<title>TODOS</title>
 </head>
 <body>
-	<div class="header">
-		<h1 class="header_title">TODOS</h1> 
+	<div class="todos-header">
+		<h1 class="todos-title">TODOS</h1>
 	</div>
-	<div class="main-body">
-		<div class="main-body_add"> 
-			<button class="select-all" aria-label="Отметить все как выполненное">select All</button>
-			<input type="text" placeholder="What need to be done?" aria-label="Поле для ввода новой задачи">
+	<div class="todos-main-body">
+		<div class="todos-add">
+			<button class="todos-select-all" aria-label="Отметить все как выполненное">select All</button>
+			<input class="todos-add_input" type="text" placeholder="What need to be done?" aria-label="Поле для ввода новой задачи">
 		</div> 
-		<div class="main-body_items-list"> 
-			<div class="item"> 
-				<input class="checkBox_unchecked" type="checkbox" aria-label="Пометить как выполненное"/>
-				<input value="HTML" aria-label="Задача: HTML"/>
-				<button class="main-body_item_remove" aria-label="Удалить данную задачу">Del</button>
+		<div class="todos-items-list">
+			<div class="todos-item">
+				<input class="todos-item_checkBox" type="checkbox" aria-label="Пометить как выполненное"/>
+				<input class="todos-item_input" value="HTML" aria-label="Задача: HTML"/>
+				<button class="todos-item_remove" aria-label="Удалить данную задачу">Del</button>
 			</div>
-			<div class="item"> 
-				<input class="checkBox_checked" type="checkbox" checked="checked" aria-label="Пометить как невыполненное"/>
-				<input value="CSS" aria-label="Задача: CSS"/>
-				<button class="main-body_item_remove" aria-label="Удалить данную задачу">Del</button>
+			<div class="todos-item __ready">
+				<input class="todos-item_checkBox_checked" type="checkbox" checked="checked" aria-label="Пометить как невыполненное"/>
+				<input class="todos-item_input" value="CSS" aria-label="Задача: CSS"/>
+				<button class="todos-item_remove" aria-label="Удалить данную задачу">Del</button>
 			</div>
-			<div class="item"> 
-				<input class="checkBox_unchecked" type="checkbox" aria-label="Пометить как выполненное"/>
-				<input value="JS" aria-label="Задача: JS"/>
-				<button class="main-body_item_remove" aria-label="Удалить данную задачу">Del</button>
+			<div class="todos-item">
+				<input class="todos-item_checkBox" type="checkbox" aria-label="Пометить как выполненное"/>
+				<input class="todos-item_input" value="JS" aria-label="Задача: JS"/>
+				<button class="todos-item_remove" aria-label="Удалить данную задачу">Del</button>
 			</div>
-			<div class="item"> 
-				<input class="checkBox_unchecked" type="checkbox" aria-label="Пометить как выполненное"/>
-				<input value="JS tools" aria-label="Задача: JS tools"/>
-				<button class="main-body_item_remove" aria-label="Удалить данную задачу">Del</button>
+			<div class="todos-item">
+				<input class="todos-item_checkBox" type="checkbox" aria-label="Пометить как выполненное"/>
+				<input class="todos-item_input" value="JS tools" aria-label="Задача: JS tools"/>
+				<button class="todos-item_remove" aria-label="Удалить данную задачу">Del</button>
 			</div>
 		</div>
 	</div>
-	<div class="status-bar">
-		<div class="status-bar_left" aria-label="Количество не выполненных задач: 3">
+	<div class="todos-status-bar">
+		<div class="todos-status-bar_counter" aria-label="Количество не выполненных задач: 3">
 			3 items left
 		</div>
-		<div class="status-bar_filters">
-			<a class="filter" href="#" aria-label="Фильтр: показать все элементы">All</a>
-        	<a class="filter" href="#" aria-label="Фильтр: показать невыполненное">Active</a>
-        	<a class="filter" href="#" aria-label="Фильтр: показать выполненное">Completed</a>
+		<div class="todos-status-bar_filters">
+			<a class="todos-filter __active" href="#" aria-label="Фильтр: показать все элементы">All</a>
+        	<a class="todos-filter" href="#" aria-label="Фильтр: показать невыполненное">Active</a>
+        	<a class="todos-filter __active" href="#" aria-label="Фильтр: показать выполненное">Completed</a>
 		</div>
-		<button class="status-bar_delete-completed" aria-label="Удалить все выполненные задачи">Clear completed</button>
+		<button class="todos-status-bar_delete-completed" aria-label="Удалить все выполненные задачи">Clear completed</button>
 	</div>
 </body>
 </html>
