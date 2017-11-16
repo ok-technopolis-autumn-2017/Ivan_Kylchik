@@ -1,0 +1,41 @@
+@import "../config/globals";
+
+.todos-status-bar {
+    @include clearfix();
+}
+
+.todos-status-bar {
+  height: $offset_10x;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+
+  font-size: $fs_little;
+  color: $c-gray-dark;
+  line-height: 1.5;
+
+  border: 0 solid $c-rainy-sky;
+  border-top-width: 1px;
+
+  .todos-status-bar_counter {
+    float: left;
+    align-self: center;
+
+    margin-left: (-$offset_18x);
+  }
+
+  .todos-status-bar_delete-completed {
+    outline: none;
+    height: 100%;
+    float: right;
+    align-self: center;
+
+    margin-right: (-$offset_18x);
+
+    background: none;
+    border: 0;
+
+    color: $c-gray-dark;
+    line-height: 1.5;
+  }
+}

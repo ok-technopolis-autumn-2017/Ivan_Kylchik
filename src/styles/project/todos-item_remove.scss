@@ -1,0 +1,26 @@
+@import "../config/globals";
+
+.todos-item_remove {
+  visibility: hidden;
+  outline: inherit;
+
+  float: right;
+  align-self: center;
+  width: $offset_10x;
+  height: $offset_15x;
+
+  background: none;
+  position: relative;
+
+  border: 0;
+
+  .todos-item_remove_icon {
+    width: $offset_4x + $offset_half;
+    height: $offset_4x + $offset_half;
+    background: url('../../images/icons/close.png') no-repeat 0 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: (-$offset_2x -$offset_half) (-$offset_2x -$offset_half);
+  }
+}

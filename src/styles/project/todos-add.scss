@@ -1,0 +1,53 @@
+@import "../config/globals";
+
+.todos-add {
+  @include clearfix();
+}
+
+.todos-select-all {
+  width: $offset_16x;
+  height: $offset_16x;
+
+  background: none;
+  outline: none;
+  border: none;
+
+  float: left;
+  position: relative;
+}
+
+.todos-select-all_icon {
+  width: $offset_6x;
+  height: $offset_3x;
+  background: url('../../images/icons/select-all.png') no-repeat 0 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: (-$offset_one_half) (-$offset_3x);
+}
+
+.todos-add_input-w {
+  overflow: hidden
+}
+
+  .todos-add_input {
+    width: 100%;
+    margin-top: $offset_3x + $offset_half;
+
+    box-sizing: border-box;
+    border: 0;
+    background: none; /*как бы прозрачность*/
+
+    color: $c-gray;
+    font-size: $offset_6x;
+    line-height: $offset_7x + $offset_half;
+    font-weight: 200;
+    padding-right: $offset_3x;
+    outline: none;
+
+  }
+
+  .todos-add_input::placeholder {
+    color: $c-smoke;
+    font-style: italic;
+  }

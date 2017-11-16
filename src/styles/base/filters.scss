@@ -1,0 +1,26 @@
+@import "../config/globals";
+
+.filters {
+  overflow: hidden;
+  align-self: center;
+  outline: none;
+
+  .filter {
+    outline: inherit;
+
+    color: $c-gray-dark;
+    line-height: 1.5;
+    margin-left: $offset;
+    margin-right: $offset;
+
+    border: solid 0;
+    background: none;
+  }
+
+  .__active {
+    outline: inherit;
+    border: 1px solid $c-pink;
+    background: none;
+    border-radius: 3px;
+  }
+}

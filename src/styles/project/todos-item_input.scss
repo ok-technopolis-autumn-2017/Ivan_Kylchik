@@ -1,0 +1,11 @@
+@import "../config/globals";
+
+.todos-item_input{
+  overflow: inherit;
+  align-self: stretch;
+  flex: 1 0;
+
+  padding-top: $offset_5x + $offset_half;
+
+  outline: inherit;
+}
