@@ -26,6 +26,14 @@
   margin: (-$offset_one_half) (-$offset_3x);
 }
 
+  .todos-select-all {
+    visibility: hidden;
+  }
+    .todos-container.__show .todos-select-all {
+      visibility: visible;
+      opacity: 1;
+    }
+
 .todos-add_input-w {
   overflow: hidden
 }

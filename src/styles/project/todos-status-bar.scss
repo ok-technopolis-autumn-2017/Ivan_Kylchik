@@ -24,6 +24,10 @@
     margin-left: (-$offset_18x);
   }
 
+  .todos-status-bar_counter.__hide-temporally{
+    visibility: hidden;
+  }
+
   .todos-status-bar_delete-completed {
     outline: none;
     height: 100%;
@@ -37,5 +41,9 @@
 
     color: $c-gray-dark;
     line-height: 1.5;
+  }
+
+  .todos-status-bar_delete-completed.__hide-temporally{
+    visibility: hidden;
   }
 }

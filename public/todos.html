@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>TODOS</title>
-
     <link rel="stylesheet" href="dist/styles/default.css" />
+    <script src="dist/scripts/bundle.js"></script>
 </head>
+<script type="text/html" id="todoItemTemplate">
+    <div class="todos-item">
+        <div class="input-checkbox">
+            <input class="input-checkbox_target" type="checkbox" aria-label="Пометить как выполненное"/>
+            <div class="input-checkbox_visual"></div>
+        </div>
+
+        <div class="todos-item_input" contenteditable="true"></div>
+
+        <button class="todos-item_remove" type="submit" aria-label="Удалить данную задачу">
+            <div class="todos-item_remove_icon"></div>
+        </button>
+    </div>
+</script>
 <body>
     <div class="todos-body">
 
@@ -27,7 +41,7 @@
             </div>
 
             <div class="todos-items-list">
-                <div class="todos-item">
+            <!--    <div class="todos-item">
                     <div class="input-checkbox">
                         <input class="input-checkbox_target" type="checkbox" aria-label="Пометить как выполненное"/>
                         <div class="input-checkbox_visual"></div>
@@ -76,7 +90,7 @@
                     <button class="todos-item_remove" type="submit" aria-label="Удалить данную задачу">
                         <div class="todos-item_remove_icon"></div>
                     </button>
-                </div>
+                </div>-->
             </div>
 
             <div class="todos-status-bar">
@@ -84,9 +98,9 @@
                     3 items left
                 </div>
                 <div class="filters">
-                    <button class="filter __active" type="submit" aria-label="Фильтр: показать все элементы">All</button>
-                    <button class="filter" type="submit" aria-label="Фильтр: показать невыполненное">Active</button>
-                    <button class="filter " type="submit" aria-label="Фильтр: показать выполненное">Completed</button>
+                    <button class="filter __active" data-filter = "all" type="submit" aria-label="Фильтр: показать все элементы">All</button>
+                    <button class="filter" data-filter = "unready" type="submit" aria-label="Фильтр: показать невыполненное">Active</button>
+                    <button class="filter " data-filter = "ready" type="submit" aria-label="Фильтр: показать выполненное">Completed</button>
                 </div>
                 <button class="todos-status-bar_delete-completed" aria-label="Удалить все выполненные задачи">Clear completed</button>
             </div>

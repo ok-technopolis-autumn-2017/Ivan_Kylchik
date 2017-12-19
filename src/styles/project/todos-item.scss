@@ -14,6 +14,17 @@
   outline: none;
 }
 
+.todos-item.__hide {
+  display: none;
+}
+.todos-item:first-child,
+.todos-item.__hide:first-child ~ .todos-item {
+  border-top: 1px solid $c-rainy-sky;
+}
+.todos-item.__hide:first-child ~ .todos-item:not(.__hide) ~ .todos-item {
+  border-top: 0;
+}
+
 .todos-item:hover {
   background: $c-snow;
 
