@@ -15,13 +15,13 @@
 	box-shadow: $box-shadow; /*сдвиг по х, сдвиг по у, размытие, цвет*/
 	z-index: -1;
 }
-	.todos-container:before{
-		height: $offset_2x + $offset_half;
-		left: $offset;
-		right: $offset;
-	}
-	.todos-container:after{
-		height: 5px;
-		left: $offset_half;
-		right: $offset_half;
-	}
+.todos-container:before{
+	height: $offset_2x + $offset_half;
+	left: $offset;
+	right: $offset;
+}
+.todos-container:after{
+	height: 5px;
+	left: $offset_half;
+	right: $offset_half;
+}

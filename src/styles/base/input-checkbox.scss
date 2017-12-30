@@ -7,28 +7,28 @@
     width: $offset_15x;
     height: $offset_15x;
 }
-    .input-checkbox_target {
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
-    .input-checkbox_visual {
-        position: absolute;
-        width: $offset_9x;
-        height: $offset_9x;
-        margin-top: $offset_3x;
-        margin-left: $offset_3x;
-        background: none;
-        border-radius: 50%;
-        border: solid 1px $c-rainy-sky;
-    }
+.input-checkbox_target {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.input-checkbox_visual {
+    position: absolute;
+    width: $offset_9x;
+    height: $offset_9x;
+    margin-top: $offset_3x;
+    margin-left: $offset_3x;
+    background: none;
+    border-radius: 50%;
+    border: solid 1px $c-rainy-sky;
+}
 
-.__ready .input-checkbox_visual{
+.todos-item.__ready .input-checkbox_visual{
     position: absolute;
     width: $offset_9x;
     height: $offset_9x;
@@ -38,7 +38,7 @@
     border: solid 1px $c-light-green;
     background: url('../../images/icons/completed.png') no-repeat $offset_2x $offset_2x;
 }
-.__ready .input-checkbox_mark-cheched{
+.todos-item.__ready .input-checkbox_mark-cheched{
     position: relative;
     float: left;
     align-self: center;
