@@ -1,13 +1,13 @@
 @import "../config/globals";
 
+$select-all-width: 24px;
+$select-all-height: $select-all-width / 2;
+
 .todos-add {
   @include clearfix();
 }
 
 .todos-select-all {
-  width: $offset_16x;
-  height: $offset_16x;
-
   background: none;
   outline: none;
   border: none;
@@ -17,8 +17,8 @@
 }
 
 .todos-select-all_icon {
-  width: $offset_6x;
-  height: $offset_3x;
+  width: $select-all-width;
+  height: $select-all-height;
   background: url('../../images/icons/select-all.png') no-repeat 0 0;
   position: absolute;
   left: 50%;

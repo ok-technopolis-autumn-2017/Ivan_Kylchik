@@ -2,36 +2,33 @@
 
 .todos-status-bar {
   @include clearfix();
-  height: $offset_10x;
+  padding: 0px $offset_3x;
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 
   font-size: $fs_little;
   color: $c-gray-dark;
-  line-height: 1.5;
+  line-height: $lh_little;
 
   border: 0 solid $c-rainy-sky;
   border-top-width: 1px;
 }
 .todos-status-bar_counter {
   float: left;
-  align-self: center;
-
-  margin-left: (-$offset_18x);
+  padding: $offset_half 0;
+  margin: $offset_2x $offset_4x $offset_2x 0;
 }
 
 .todos-status-bar_delete-completed {
   outline: none;
-  height: 100%;
   float: right;
-  align-self: center;
 
-  margin-right: (-$offset_18x);
+  margin: $offset_2x 0 $offset_2x $offset_4x;
+  padding: $offset_half 0;
 
   background: none;
   border: 0;
 
   color: $c-gray-dark;
-  line-height: 1.5;
+  line-height: $lh_little;
 }
