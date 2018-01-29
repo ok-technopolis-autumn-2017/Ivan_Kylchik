@@ -1,9 +1,11 @@
 @import "../config/globals";
 
+$checkbox-size: 60px;
+
 .input-checkbox {
   @include relative-left();
-  width: $offset_15x;
-  height: $offset_15x;
+  width: $checkbox-size;
+  height: $checkbox-size;
 }
 .input-checkbox_target {
   @include absolute-full();
@@ -22,7 +24,7 @@
   background: none;
 }
 
-.todos-item.__ready .input-checkbox_visual{
+.input-checkbox_target:checked ~ .input-checkbox_visual{
   position: absolute;
   width: $offset_9x;
   height: $offset_9x;
@@ -32,18 +34,18 @@
   border: solid 1px $c-light-green;
   background: url('../../images/icons/completed.png') no-repeat $offset_2x $offset_2x;
 }
-.todos-item.__ready:hover .input-checkbox_visual{
+.input-checkbox_target:checked:hover ~ .input-checkbox_visual{
   background: white url('../../images/icons/completed.png') no-repeat $offset_2x $offset_2x;
   background-clip: padding-box;
 }
 
-.todos-item:hover .input-checkbox_visual {
+.input-checkbox_target:hover .input-checkbox_visual {
   background: $c-white;
   background-clip: padding-box;
 }
 
-.todos-item.__ready .input-checkbox_mark-cheched{
+.input-checkbox_target:checked{
   @include relative-left();
-  width: $offset_15x;
-  height: $offset_15x;
+  width: $checkbox-size;
+  height: $checkbox-size;
 }

@@ -1,5 +1,8 @@
 @import "../config/globals";
 
+$todos-item_remove-width: 40px;
+$todos-item_remove-height: $todos-item_remove-width * 1.5;
+
 .todos-item_remove {
   visibility: hidden;
   outline: inherit;
@@ -7,8 +10,8 @@
   order: 1;
   float: right;
   align-self: center;
-  width: $offset_10x;
-  height: $offset_15x;
+  width: $todos-item_remove-width;
+  height: $todos-item_remove-height;
 
   background: none;
   position: relative;
