@@ -1,0 +1,38 @@
+@import "../config/globals";
+
+.todos-item{
+  @include clearfix();
+  display: flex;
+  float: inherit;
+
+  border: 0 solid $c-rainy-sky;
+  border-top-width: 1px;
+
+  font-size: $fs_xx-large;
+  color: $c-gray;
+  line-height: $lh_xx-large;
+
+  outline: none;
+}
+
+.todos-item:hover {
+  background: $c-snow;
+
+  .input-checkbox_visual{
+    background: $c-white;
+    background-clip: padding-box;
+  }
+  .todos-item_remove{
+    visibility: visible;
+  }
+}
+
+.todos-item.__ready:hover .input-checkbox_visual{
+    background: white url('../../images/icons/completed.png') no-repeat $offset_2x $offset_2x;
+    background-clip: padding-box;
+}
+
+.todos-item.__ready .todos-item_input{
+    color: $c-smoke;
+    text-decoration: line-through;
+}

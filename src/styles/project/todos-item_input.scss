@@ -1,0 +1,16 @@
+@import "../config/globals";
+
+.todos-item_input-w {
+  overflow: hidden;
+  flex: 1 0;
+}
+  .todos-item_input{
+    outline: none;
+    border: 0;
+    font-family: $font-main;
+    font-size: $fs_xx-large;
+    line-height: $lh_xx-large;
+    font-weight: 300;
+    padding-top: $offset_4x;
+    overflow: hidden;
+  }
