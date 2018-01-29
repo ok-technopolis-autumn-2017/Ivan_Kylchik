@@ -8,7 +8,7 @@
 
 .todos-container:before,
 .todos-container:after{
-  //content: '';
+  content: '';
 	position: absolute;
 	top: 100%;
 	background: $c-white;
