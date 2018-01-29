@@ -1,5 +1,8 @@
 @import "../config/globals";
 
+$select-all-width: 24px;
+$select-all-height: $select-all-width / 2;
+
 .todos-add {
   @include clearfix();
 }
@@ -17,8 +20,8 @@
 }
 
 .todos-select-all_icon {
-  width: $offset_6x;
-  height: $offset_3x;
+  width: $select-all-width;
+  height: $select-all-height;
   background: url('../../images/icons/select-all.png') no-repeat 0 0;
   position: absolute;
   left: 50%;
@@ -26,36 +29,36 @@
   margin: (-$offset_one_half) (-$offset_3x);
 }
 
-  .todos-select-all {
-    visibility: hidden;
-  }
-    .todos-container.__show .todos-select-all {
-      visibility: visible;
-      opacity: 1;
-    }
+.todos-select-all {
+  visibility: hidden;
+}
+.todos-container.__show .todos-select-all {
+  visibility: visible;
+  opacity: 1;
+}
 
 .todos-add_input-w {
   overflow: hidden
 }
 
-  .todos-add_input {
-    width: 100%;
-    margin-top: $offset_3x + $offset_half;
+.todos-add_input {
+  width: 100%;
+  margin-top: $offset_3x + $offset_half;
 
-    box-sizing: border-box;
-    border: 0;
-    background: none; /*как бы прозрачность*/
+  box-sizing: border-box;
+  border: 0;
+  background: none; /*как бы прозрачность*/
 
-    color: $c-gray;
-    font-size: $offset_6x;
-    line-height: $offset_7x + $offset_half;
-    font-weight: 200;
-    padding-right: $offset_3x;
-    outline: none;
+  color: $c-gray;
+  font-size: $offset_6x;
+  line-height: $offset_7x + $offset_half;
+  font-weight: 200;
+  padding-right: $offset_3x;
+  outline: none;
 
-  }
+}
 
-  .todos-add_input::placeholder {
-    color: $c-smoke;
-    font-style: italic;
-  }
+.todos-add_input::placeholder {
+  color: $c-smoke;
+  font-style: italic;
+}

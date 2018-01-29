@@ -1,15 +1,16 @@
 @import "../config/globals";
 
 .todos-item{
-  overflow: hidden;
+  @include clearfix();
   display: flex;
+  float: inherit;
 
   border: 0 solid $c-rainy-sky;
   border-top-width: 1px;
 
   font-size: $fs_xx-large;
   color: $c-gray;
-  line-height: 0.875;
+  line-height: $lh_xx-large;
 
   outline: none;
 }
@@ -27,26 +28,27 @@
 
 .todos-item:hover {
   background: $c-snow;
+}
+  .todos-item:hover .todos-item_remove{
+     visibility: visible;
+   }
 
-  .input-checkbox_visual{
-    background: $c-white;
-    background-clip: padding-box;
-  }
-  .todos-item_remove{
-    visibility: visible;
-  }
+.todos-item.__ready .todos-item_input{
+  color: $c-smoke;
+  text-decoration: line-through;
 }
 
-.__ready:hover {
-  .input-checkbox_visual {
-    background: white url('../../images/icons/completed.png') no-repeat $offset_2x $offset_2x;
-    background-clip: padding-box;
-  }
+.todos-item_input-w {
+  overflow: hidden;
+  flex: 1 0;
 }
-
-.__ready {
-  .todos-item_input {
-    color: $c-smoke;
-    text-decoration: line-through;
+  .todos-item_input{
+    outline: none;
+    border: 0;
+    font-family: $font-main;
+    font-size: $fs_xx-large;
+    line-height: $lh_xx-large;
+    font-weight: 300;
+    padding-top: $offset_4x;
+    overflow: hidden;
   }
-}

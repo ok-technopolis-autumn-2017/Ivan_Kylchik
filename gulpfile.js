@@ -2,7 +2,8 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const clean = require('gulp-clean');
-const rebaseUrls = require('gulp-css-rebase-urls');
+//const rebaseUrls = require('gulp-css-rebase-urls');
+const urlAdjuster = require('gulp-css-url-adjuster');
 
 
 gulp.task('images-clean-dist', () =>
@@ -23,7 +24,10 @@ gulp.task('sass', () =>
     gulp.src('./src/styles/default.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(rebaseUrls())
+        //.pipe(rebaseUrls())
+        .pipe(urlAdjuster({
+            replace:  ['../../images','../images'],
+        }))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./public/dist/styles'))
 );

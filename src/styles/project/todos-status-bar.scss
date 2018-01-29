@@ -1,49 +1,42 @@
 @import "../config/globals";
 
 .todos-status-bar {
-    @include clearfix();
-}
-
-.todos-status-bar {
-  height: $offset_10x;
+  @include clearfix();
+  padding: 0px $offset_3x;
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 
   font-size: $fs_little;
   color: $c-gray-dark;
-  line-height: 1.5;
+  line-height: $lh_little;
 
   border: 0 solid $c-rainy-sky;
   border-top-width: 1px;
+}
+.todos-status-bar_counter {
+  float: left;
+  padding: $offset_half 0;
+  margin: $offset_2x $offset_4x $offset_2x 0;
+}
 
-  .todos-status-bar_counter {
-    float: left;
-    align-self: center;
+.todos-status-bar_counter.__hide-temporally{
+  visibility: hidden;
+}
 
-    margin-left: (-$offset_18x);
-  }
+.todos-status-bar_delete-completed {
+  outline: none;
+  float: right;
 
-  .todos-status-bar_counter.__hide-temporally{
-    visibility: hidden;
-  }
+  margin: $offset_2x 0 $offset_2x $offset_4x;
+  padding: $offset_half 0;
 
-  .todos-status-bar_delete-completed {
-    outline: none;
-    height: 100%;
-    float: right;
-    align-self: center;
+  background: none;
+  border: 0;
 
-    margin-right: (-$offset_18x);
+  color: $c-gray-dark;
+  line-height: $lh_little;
+}
 
-    background: none;
-    border: 0;
-
-    color: $c-gray-dark;
-    line-height: 1.5;
-  }
-
-  .todos-status-bar_delete-completed.__hide-temporally{
-    visibility: hidden;
-  }
+.todos-status-bar_delete-completed.__hide-temporally{
+  visibility: hidden;
 }
