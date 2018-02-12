@@ -19,9 +19,9 @@
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-css-rebase-urls": "0.0.5",
+    "gulp-css-url-adjuster": "^0.2.3",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.5.1",
-    "gulp-css-url-adjuster": "^0.2.3",
-    "webpack": "^3.10.0"
+    "webpack": "^3.11.0"
   }
 }

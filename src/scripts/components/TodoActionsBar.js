@@ -16,7 +16,7 @@ function TodoActionsBarConstructor() {
 
     this._clearCompletedNode.addEventListener('click', this);
 
-    this._filters = new Filter(document.querySelector('.filters'));
+    this._filters = new Filter(document.querySelector('.todos-filters'));
 
     this._filters.on('filterSelected', this._onFilterSelected, this);
 }

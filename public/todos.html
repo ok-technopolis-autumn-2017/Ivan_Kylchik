@@ -8,7 +8,7 @@
 </head>
 <script type="text/html" id="todoItemTemplate">
     <div class="todos-item">
-        <div class="input-checkbox">
+        <div class="input-checkbox todos-item_ready-mark">
             <input class="input-checkbox_target" type="checkbox" aria-label="Пометить как выполненное"/>
             <div class="input-checkbox_visual"></div>
         </div>
@@ -51,7 +51,7 @@
                     <div class="todos-status-bar_counter" aria-label="Количество не выполненных задач: 3">
                         3 items left
                     </div>
-                    <div class="filters">
+                    <div class="todos-filters">
                         <button class="filter __active" data-filter = "all" type="submit" aria-label="Фильтр: показать все элементы">All</button>
                         <button class="filter" data-filter = "unready" type="submit" aria-label="Фильтр: показать невыполненное">Active</button>
                         <button class="filter " data-filter = "ready" type="submit" aria-label="Фильтр: показать выполненное">Completed</button>

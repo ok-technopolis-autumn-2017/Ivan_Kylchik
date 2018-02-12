@@ -1,32 +1,16 @@
 @import "../config/globals";
 
-.filters {
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  margin: $offset_2x 0;
-  outline: none;
-}
 .filter {
-  outline: inherit;
-
-  margin: 0 $offset;
-
   color: $c-gray-dark;
   line-height: $lh_little;
 
   border: solid 0;
   background: none;
+
+  outline: none;
 }
-  .filters .filter:first-child {
-    margin-left: 0;
-  }
-  .filters .filter:last-child {
-    margin-right: 0;
-  }
 
 .filter.__active {
-  outline: inherit;
   border: 1px solid $c-pink;
   background: none;
   border-radius: 3px;
