@@ -1,0 +1,3 @@
+скомпилить scss - gulp
+скомпилировать js - //npm webpack --watch
+                    webpack
